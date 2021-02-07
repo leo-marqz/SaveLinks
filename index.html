@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/logo@2x.png" type="image/x-icon">
+  <title>APP-SAVE/LINKS</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    main{
+      padding: 0px 5px;
+    }
+  </style>
+</head>
+<body>
+  <header class="p-4 bg-dark text-white">
+    <h1 class="text-center fw-normal">SAVE LINKS</h1>
+  </header>
+
+  
+  <main class="row mt-5">
+    <!-- <div class="go mt-2 mb-2 col-md-12 text-center">
+      <button id="go" class="btn btn-success ">go to links ►</button>
+      <button id="back" class="btn btn-primary">◄ go to form</button>
+    </div> -->
+
+    <div id="main" class="main col-md-3 ms-1 mb-3">
+      <div class="card border-secondary">
+        <form class="p-2 ">
+          <label for="title" class="form-label">Title</label>
+          <input type="text" class="form-control" id="title">
+
+          <label for="url" class="form-label">URL</label>Link</label>
+          <input type="text" class="form-control" id="url">
+
+          <label for="description" class="form-label">Description</label>
+          <input type="text" class="form-control" id="description">
+
+          <button id="btn-saveLinks" class="btn btn-dark mt-3 mb-1">Save Links  <i id="icon" class="fa fa-save" aria-hidden="true"></i></button>
+        </form>
+      </div>
+      
+    </div>
+
+    <div class="space-Links col-md-8">
+      <table id="spaceLinks" class="links table border border-secondary table-hover">
+        <thead class="bg-dark text-white">
+          <tr>
+            <th class="text-center">N°</th>
+            <th class="">TITLE</th>
+            <th class="">DESCRIPTION</th>
+            <th class="">LINK</th>
+            <th class="">ACTIONS</th>
+          </tr>
+        </thead>
+        <tbody id="links">
+
+        </tbody>
+      </table>
+    </div>
+    
+    
+  </main>
+  
+  <script src="./js/app.js"></script>
+</body>
+</html>
+
