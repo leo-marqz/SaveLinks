@@ -19,6 +19,48 @@
       background:#1b1b1c;
     }
 
+    .top{
+      width:40px;
+      height: 40px;
+      display:none;
+      justify-content:center;
+      align-items:center;
+      border:1px solid #fff;
+      background:black;
+      border-radius: 100%;
+      box-shadow:0px 0px 10px #fff;
+      position:fixed;
+      bottom: 30px;
+      right:30px;
+      animation-name: activar;
+      animation-duration:0.9s;
+      animation-timing-function: linear;
+    }
+
+    .top:hover{
+      background:#3a005e;
+      cursor:pointer;
+    }
+
+    .top:active{
+      border: 2px solid #fff;
+    }
+
+    @keyframes activar {
+      0%{
+        opacity: 0.1;
+      }
+      50%{
+        opacity: 0.5;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
+
+  
+
+
   </style>
   <title>Save - Links</title>
 </head>
@@ -48,8 +90,13 @@
       </tbody>
     </table>
   </div>
+
+  <div class="top" id="top"> <img src="./img/top.svg" alt=""> </div>
+
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="./js/app.js"></script>
+  <script src="./js/btn_top.js"></script>
+
 </body>
 </html>
 
