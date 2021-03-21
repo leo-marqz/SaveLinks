@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", ()=>{
   Swal.fire({
-    text:'Bienvenido a SaveLinks, aqui podras guardar tus enlaces mas importantes solo debes tener cuidado cuando borres datos del navegador ya que tus enlaces se guardaran en la memoria de este.',
+    html:'Bienvenido a SaveLinks, aqui podras guardar tus enlaces mas importantes solo debes tener cuidado cuando borres datos del navegador ya que tus enlaces se guardaran en la memoria de este.<br/> <br/> Autor: <cite>Leonel Márquez</cite>',
     icon: 'info',
     confirmButtonText: 'Entendido'
   });
@@ -73,9 +73,9 @@ function getLinks(){
         <td class="p-1 text-center align-middle">${i + 1}</td>
         <td class="p-1 fw-normal align-middle">${_title}</td>
         <td class="p-1">
-          <a class="btn btn-success" href="${_url}" target="_blank" >Open Link</a>
-          <a class="btn btn-primary" onclick="copyLink('${_url}')">Copy Link</a>
-          <a class="btn btn-danger" onclick="DeleteLink('${_title}')" >Delete</a>
+          <a class="btn btn-success" href="${_url}" target="_blank" ><img src='./img/open.svg'/></a>
+          <a class="btn btn-primary" onclick="copyLink('${_url}')"><img src='./img/copy.svg'/></a>
+          <a class="btn btn-danger" onclick="DeleteLink('${_title}')" ><img src='./img/delete.svg'/></a>
         </td>
      </tr>`;
   }
